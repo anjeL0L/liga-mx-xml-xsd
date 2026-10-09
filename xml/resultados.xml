@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liga xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/resultados.xsd">
+    <jornada numero="10" fecha="2026-09-27">
+        <partido id="P001" estado="Finalizado">
+            <equipoLocal nombre="Pumas UNAM">
+                <marcador>2</marcador>
+                <estadisticas>
+                    <posesion>48%</posesion>
+                    <tiros>10</tiros>
+                    <faltas>12</faltas>
+                </estadisticas>
+            </equipoLocal>
+            <equipoVisitante nombre="Atlético de San Luis">
+                <marcador>3</marcador>
+                <estadisticas>
+                    <posesion>52%</posesion>
+                    <tiros>14</tiros>
+                    <faltas>9</faltas>
+                </estadisticas>
+            </equipoVisitante>
+            <estadio>Estadio Olímpico Universitario</estadio>
+        </partido>
+        
+        <partido id="P002" estado="Finalizado">
+            <equipoLocal nombre="Club León">
+                <marcador>2</marcador>
+                <estadisticas>
+                    <posesion>55%</posesion>
+                    <tiros>12</tiros>
+                    <faltas>14</faltas>
+                </estadisticas>
+            </equipoLocal>
+            <equipoVisitante nombre="FC Juárez">
+                <marcador>1</marcador>
+                <estadisticas>
+                    <posesion>45%</posesion>
+                    <tiros>8</tiros>
+                    <faltas>15</faltas>
+                </estadisticas>
+            </equipoVisitante>
+            <estadio>Estadio León</estadio>
+        </partido>
+
+        <partido id="P003" estado="Finalizado">
+            <equipoLocal nombre="Club Necaxa">
+                <marcador>2</marcador>
+                <estadisticas>
+                    <posesion>40%</posesion>
+                    <tiros>9</tiros>
+                    <faltas>10</faltas>
+                </estadisticas>
+            </equipoLocal>
+            <equipoVisitante nombre="Club América">
+                <marcador>4</marcador>
+                <estadisticas>
+                    <posesion>60%</posesion>
+                    <tiros>18</tiros>
+                    <faltas>11</faltas>
+                </estadisticas>
+            </equipoVisitante>
+            <estadio>Estadio Victoria</estadio>
+        </partido>
+    </jornada>
+</liga>
