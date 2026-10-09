@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definición del elemento raíz y su estructura jerárquica -->
+    <xs:element name="liga">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="jornada" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="partido" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="equipoLocal" type="tipoEquipo"/>
+                                        <xs:element name="equipoVisitante" type="tipoEquipo"/>
+                                        <xs:element name="estadio" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:ID" use="required"/>
+                                    <xs:attribute name="estado" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="numero" type="xs:integer" use="required"/>
+                        <xs:attribute name="fecha" type="xs:date" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definición del tipo complejo reutilizable para ambos equipos -->
+    <xs:complexType name="tipoEquipo">
+        <xs:sequence>
+            <xs:element name="marcador" type="xs:integer"/>
+            <xs:element name="estadisticas" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="posesion" type="xs:string"/>
+                        <xs:element name="tiros" type="xs:integer"/>
+                        <xs:element name="faltas" type="xs:integer"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="nombre" type="xs:string" use="required"/>
+    </xs:complexType>
+
+</xs:schema>
